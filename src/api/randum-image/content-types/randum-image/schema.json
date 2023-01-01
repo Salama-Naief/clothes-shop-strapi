@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "randum_images",
+  "info": {
+    "singularName": "randum-image",
+    "pluralName": "randum-images",
+    "displayName": "randumImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgs": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

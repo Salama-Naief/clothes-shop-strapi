@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colection_of_products",
+  "info": {
+    "singularName": "colection-of-product",
+    "pluralName": "colection-of-products",
+    "displayName": "collection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "collections"
+    },
+    "landingPage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::landingpage.landingpage",
+      "inversedBy": "collection"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "collections"
+    },
+    "name_arabic": {
+      "type": "string"
+    }
+  }
+}

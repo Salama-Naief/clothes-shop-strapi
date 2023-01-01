@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "shop_details",
+  "info": {
+    "singularName": "shop-detail",
+    "pluralName": "shop-details",
+    "displayName": "shopDetail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "aboutUs": {
+      "type": "text",
+      "required": false
+    },
+    "title_arabic": {
+      "type": "string"
+    },
+    "aboutUs_arabic": {
+      "type": "text"
+    },
+    "FreeShipping": {
+      "type": "string"
+    },
+    "FreeShipping_arabic": {
+      "type": "string"
+    },
+    "FreeShippingDatails": {
+      "type": "richtext"
+    },
+    "FreeShippingDatails_arabic": {
+      "type": "richtext"
+    },
+    "FreeReturn": {
+      "type": "string"
+    },
+    "freeReturn_arabic": {
+      "type": "string"
+    },
+    "FreeReturnDtails": {
+      "type": "richtext"
+    },
+    "FreeReturnDtails_arabic": {
+      "type": "richtext"
+    },
+    "paymentSecurity": {
+      "type": "text"
+    },
+    "paymentSecurity_arabic": {
+      "type": "text"
+    }
+  }
+}
