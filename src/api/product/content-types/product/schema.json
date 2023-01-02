@@ -106,7 +106,7 @@
     },
     "color": {
       "type": "string",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -149,50 +149,11 @@
         }
       }
     },
-    "genre": {
-      "type": "enumeration",
-      "enum": [
-        "clothes",
-        "bags",
-        "accesories",
-        "shoes"
-      ],
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "numberInStock": {
       "required": true,
       "default": 0,
       "min": 0,
       "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "type": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "hoverImg": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -209,7 +170,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::order.order",
-      "inversedBy": "products"
+      "mappedBy": "products"
     }
   }
 }

@@ -10,11 +10,20 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -27,20 +36,17 @@
       "target": "api::page.page",
       "inversedBy": "collections"
     },
-    "landingPage": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::landingpage.landingpage",
-      "inversedBy": "collection"
-    },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "collections"
     },
-    "name_arabic": {
-      "type": "string"
+    "landingPages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::landingpage.landingpage",
+      "inversedBy": "collections"
     }
   }
 }

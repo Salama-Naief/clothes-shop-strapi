@@ -16,11 +16,11 @@
     }
   },
   "attributes": {
-    "collection": {
+    "collections": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::colection-of-product.colection-of-product",
-      "mappedBy": "landingPage"
+      "mappedBy": "landingPages"
     },
     "title": {
       "type": "string",
