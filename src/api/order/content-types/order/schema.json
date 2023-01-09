@@ -62,11 +62,11 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "orders"
     },
-    "products": {
+    "orderProducts": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product.product",
-      "inversedBy": "orders"
+      "relation": "oneToMany",
+      "target": "api::order-product.order-product",
+      "mappedBy": "order"
     },
     "checkout_session": {
       "type": "string"

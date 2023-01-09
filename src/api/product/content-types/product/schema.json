@@ -51,7 +51,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "default": 0
     },
     "slug": {
       "type": "uid",
@@ -165,12 +166,6 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "products"
-    },
-    "orders": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::order.order",
-      "mappedBy": "products"
     }
   }
 }
