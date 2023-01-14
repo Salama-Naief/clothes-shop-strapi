@@ -37,7 +37,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
     const response = await strapi.entityService.create("api::order.order", {
       data: { ...data, orderProducts: productsId },
     });
-
+console.log("responce",response)
     return { response };
   },
 }));
